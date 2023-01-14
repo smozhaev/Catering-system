@@ -8,6 +8,7 @@ import React from "react";
 import Tea from './Main/drinks/Tea/Tea';
 import Basket from './Header/HeaderComponents/Basket';
 import PersonalArea from './Header/HeaderComponents/PersonalArea';
+import HotEat from './Main/Hoteat/Hoteat';
 
 
 
@@ -23,7 +24,8 @@ function App() {
             <Route path='/' element={<Main/>} />
             <Route path='/drinks' element={<Drinks/>} />
             <Route path='/drinks/tea' element={<Tea/>} />
-            <Route path='/drinks' element={<Drinks/>} />
+            <Route path='/hot' element={<HotEat/>} />
+            <Route path='/hot/soupe' element={<Tea/>} />
           </Routes>
           <Footer />
         </div>
