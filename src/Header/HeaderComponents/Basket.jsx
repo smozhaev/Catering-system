@@ -11,7 +11,6 @@ const Basket = (props) => {
             {/* <BasketPosts/> */}
             {/* <BasketPosts/> */}
             {/* <BasketPosts/> */}
-            а
             <button>Оформить заказ</button>
         </div>
     )
