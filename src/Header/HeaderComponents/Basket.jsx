@@ -1,5 +1,5 @@
 import React from "react";
-import 'C:/REACT-LEARNING/my-app/src/Header/Header.css';
+import './HeadComp.css';
 import BasketPosts from './BasketPosts';
 
 const Basket = (props) => {
