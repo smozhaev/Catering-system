@@ -1,0 +1,25 @@
+.plus-button {
+    align-self: center;
+    width: 25px;
+}
+.add-buttons-container {
+    display: flex;
+    flex-direction: row;
+}
+.counter-container {
+   /* border: solid black 2px; */
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between; 
+   width: 70px;
+   height: 25px;
+}
+
+.add-button {
+    margin-left: 20px;
+}
+
+.counter {
+   flex-shrink: 1;
+
+}

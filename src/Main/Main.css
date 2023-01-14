@@ -1,0 +1,35 @@
+.main-block { 
+    display: flex;
+    /* border: solid black 5px; */
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 1000px;
+       
+}
+
+.ul-main {
+    display: flex;
+    /* border: solid black 5px; */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 800px;  
+    padding: 0px;
+}
+
+.li-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    padding: 0px;
+    width: 300px;
+    height: 80px;  
+    border: solid black 5px;
+}
+
+

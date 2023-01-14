@@ -1,0 +1,38 @@
+.drink-block { 
+    display: flex;
+    /* border: solid black 5px; */
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 1000px;
+       
+}
+
+.ul-drink {
+    display: flex;
+    /* border: solid black 5px; */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 800px;  
+    padding: 0px;
+}
+
+.li-drink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+    margin-left: 30px;
+    padding: 0px;
+    width: 300px;
+    height: 125px;  
+    border: solid black 5px;
+    border-radius: 15px;
+}
+
+
+
