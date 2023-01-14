@@ -9,10 +9,10 @@ const Main = () => {
             <ul className="ul-main">
                 <li className="li-main"><a href='/drinks'>напитки</a></li>
                 <li className="li-main"><a href='/hot'>Горячее</a></li>
-                <li className="li-main"><a href='/drinks'>Бутер</a></li>
-                <li className="li-main"><a href='/drinks'>Блок4</a></li>
-                <li className="li-main"><a href='/drinks'>Блок5</a></li>
-                <li className="li-main"><a href='/drinks'>Блок6</a></li>
+                <li className="li-main"><a href='/drinks'>Бутерброды</a></li>
+                <li className="li-main"><a href='/drinks'>Конфетные изделия</a></li>
+                <li className="li-main"><a href='/drinks'>Выпечка</a></li>
+                <li className="li-main"><a href='/drinks'>Сладкая выпечка</a></li>
                 <li className="li-main"><a href='/drinks'>Блок7</a></li>
                 <li className="li-main"><a href='/drinks'>Блок8</a></li>
             </ul>
