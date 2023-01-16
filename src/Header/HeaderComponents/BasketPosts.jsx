@@ -11,7 +11,7 @@ const BasketPosts = (props) => {
                 {props.basket.title}
             </div>
             <div className="amount-content">
-                {/* <AmountButton basket={props.basket}/> */}
+                <AmountButton basket={props.basket}/>
             </div>
             <div className="post-content">
                 <BasketButton basket={props.basket}/>
