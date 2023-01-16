@@ -1,6 +1,7 @@
 import React from "react";
 import './HeadComp.css';
 import BasketButton from './BasketButton';
+import AmountButton from './AmountButton';
 
 const BasketPosts = (props) => {
     // console.log(props)
@@ -8,6 +9,9 @@ const BasketPosts = (props) => {
         <div className="post-block">
             <div className="product-value">
                 {props.basket.title}
+            </div>
+            <div className="amount-content">
+                {/* <AmountButton basket={props.basket}/> */}
             </div>
             <div className="post-content">
                 <BasketButton basket={props.basket}/>

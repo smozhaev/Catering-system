@@ -3,7 +3,7 @@ import './HeadComp.css';
 import { useState } from "react";
 
 const BasketButton = (props) => {
-    let countsProps = props.basket.body 
+    let countsProps = props.basket.counter
     const [counts, setCounts] = useState(countsProps);
 
     let Plus = () => setCounts(counts + 1);
