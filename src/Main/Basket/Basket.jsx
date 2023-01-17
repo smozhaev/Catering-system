@@ -1,7 +1,7 @@
 import React from "react";
-import './HeadComp.css';
+import './BasketComp.css';
 import BasketPosts from './BasketPosts';
-import { useState } from "react";
+
 
 const Basket = ({posts}) => {
     return(

@@ -1,5 +1,5 @@
 import React from "react";
-import './HeadComp.css';
+import './BasketComp.css';
 import { useState } from "react";
 
 const BasketButton = (props) => {

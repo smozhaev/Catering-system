@@ -1,5 +1,5 @@
 import React from "react";
-import './HeadComp.css';
+import './BasketComp.css';
 
 const AmountButton = (props) => {
     let amountProps = props.basket.amount 
