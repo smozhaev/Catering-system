@@ -41,7 +41,7 @@ function App() {
           <Route path='/basket' element={<Basket posts={posts}/>}/>
           <Route path='/personalarea' element={<PersonalArea/>}/>
           <Route path='/drinks' element={<Categories/>} />
-          <Route path='/drinks/tea' element={<Products products={productsZ ZЯZ}/>} />
+          <Route path='/drinks/tea' element={<Products products={products}/>} />
         </Routes>
         <Footer />
       </div>
