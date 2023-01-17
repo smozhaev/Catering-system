@@ -4,8 +4,8 @@ import './Header.css';
 
 const Header = () => {
     return(
-        <header className="header">
-            <h1>Logo</h1>
+        <header className="header" >
+            <h1>Вкусняшка</h1>
             <ul className='ul-header'>
                 <li className='li-header'><a href='/'>Главная</a></li>
                 <li className='li-header'><a href='/basket'>Корзина</a></li>

@@ -2,6 +2,8 @@
     display: flex;
     justify-content: space-between;
     border:solid black 5px;
+    background-color: #d9ffdfff;
+
 }
 
 
@@ -24,5 +26,7 @@
 
 .li-header {
     margin-right: 10px;
+    text-decoration: none;
+    color: #d9ffdfff;
 }
 

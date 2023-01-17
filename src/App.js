@@ -22,7 +22,8 @@ function App() {
     {id: 5, title:'Чайй', counter: 3, amount: 10},
     {id: 6, title:'Супп', counter: 1, amount: 10},
     {id: 7, title:'Сокк', counter: 4, amount: 10},
-    
+    {id: 6, title:'Супп', counter: 1, amount: 10},
+    {id: 7, title:'Сокк', counter: 4, amount: 10},
     
   ])
   const [products, setProducts] = useState([
