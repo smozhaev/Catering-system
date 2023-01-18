@@ -5,16 +5,13 @@ import './Main.css'
 const Main = () => {
     return(
         <div className="main-block">
-            <h1>Главная</h1>
+            <h2>Главная</h2>
             <ul className="ul-main">
-                <li className="li-main"><a href='/drinks'>напитки</a></li>
-                <li className="li-main"><a href='/hot'>Горячее</a></li>
-                <li className="li-main"><a href='/drinks'>Бутерброды</a></li>
-                <li className="li-main"><a href='/drinks'>Конфетные изделия</a></li>
-                <li className="li-main"><a href='/drinks'>Выпечка</a></li>
-                <li className="li-main"><a href='/drinks'>Сладкая выпечка</a></li>
-                <li className="li-main"><a href='/drinks'>Блок7</a></li>
-                <li className="li-main"><a href='/drinks'>Блок8</a></li>
+                <li className="li-main picture1"><a href='/drinks' class="btn btn-oval">Напитки</a></li>
+                <li className="li-main picture2"><a href='/hot' class="btn btn-oval">Горячее</a></li>
+                <li className="li-main picture3"><a href='/drinks' class="btn btn-ovall">Холодные закуски</a></li>
+                <li className="li-main picture4"><a href='/drinks' class="btn btn-oval">Выпечка</a></li>
+                <li className="li-main picture5"><a href='/drinks' class="btn btn-ovall">Сладости и снеки</a></li>
             </ul>
         </div>
     )
