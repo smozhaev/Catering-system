@@ -1,15 +1,15 @@
 .plus-button {
     align-self: center;
     width: 25px;
-    color: #035A2D;
+    color: #DAFFDE;
     display: inline-block;
     box-sizing: border-box;
     text-align: center;
     background: radial-gradient(169.48% 119.25% at 44.61% 109.92%, #9AE1CC 11.35%, #86D4C7 37.8%, #6FC5C2 69.14%, #58B6BD 100%);
-    border-radius: 32px;
+    border-radius: 10px;
     font: bold 20px/30px Arial;
     box-shadow: inset 0 2px 2px #86D4C7, inset 1px 0 3px #9AE1CC, inset -1px 0 3px #6FC5C2, inset 0 -2px 2px #58B6BD, 0 0 3px rgba(0, 0, 0, 0.24); position: relative; text-shadow: 0 1px #58B6BD; outline: none;
-
+    border: none;
 }
 .add-buttons-container {
     display: flex;
@@ -27,16 +27,27 @@
 
 .add-button {
     margin-left: 20px;
-    color: #035A2D;
+    color: #F0FFF2;
     display: inline-block;
     width: 120px;
-    height: 32px;
     box-sizing: border-box;
     text-align: center;
     background: radial-gradient(169.48% 119.25% at 44.61% 109.92%, #9AE1CC 11.35%, #86D4C7 37.8%, #6FC5C2 69.14%, #58B6BD 100%);
-    border-radius: 32px;
+    border-radius: 10px;
     font: bold 20px/30px Arial;
     box-shadow: inset 0 2px 2px #86D4C7, inset 1px 0 3px #9AE1CC, inset -1px 0 3px #6FC5C2, inset 0 -2px 2px #58B6BD, 0 0 3px rgba(0, 0, 0, 0.24); position: relative; text-shadow: 0 1px #58B6BD; outline: none;
+    border: none;
+}
+
+.add-button:hover {
+    background: radial-gradient(169.48% 119.25% at 44.61% 109.92%, #9AE1CC 11.35%, #86D4C7 37.8%, #6FC5C2 69.14%, #58B6BD 100%);
+    box-shadow: inset 0 2px 2px #86D4C7, inset 1px 0 3px #9AE1CC, inset -1px 0 3px #6FC5C2, inset 0 -2px 2px #58B6BD, 0 0 3px rgba(0, 0, 0, 0.24); position: relative; text-shadow: 0 1px #58B6BD; outline: none;
+}
+
+.add-button:active {
+    background: radial-gradient(169.48% 119.25% at 44.61% 109.92%, #9AE1CC 11.35%, #86D4C7 37.8%, #6FC5C2 69.14%, #58B6BD 100%);
+    box-shadow: inset 0 2px 2px #86D4C7, inset 1px 0 3px #9AE1CC, inset -1px 0 3px #6FC5C2, inset 0 -2px 2px #58B6BD, 0 0 3px rgba(0, 0, 0, 0.24); position: relative; text-shadow: 0 1px #58B6BD; outline: none;
+    padding: 1px 0 0 1px;
 }
 
 .counter {
