@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     border:solid black 5px;
-    background-color: #d9ffdfff;
+    background: radial-gradient(169.48% 119.25% at 44.61% 109.92%, #9AE1CC 11.35%, #86D4C7 37.8%, #6FC5C2 69.14%, #58B6BD 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
 
 }
 
@@ -24,9 +24,38 @@
 
 
 
+
 .li-header {
     margin-right: 10px;
-    text-decoration: none;
-    color: #d9ffdfff;
 }
+
+
+
+.link-header {
+    display: block;
+    width: 70px;
+    height: 30px;
+    
+    border-radius: 100px;
+    background-color: none;
+    text-decoration: none;
+    color: #DAFFDE;
+    text-align: center;
+    
+    
+}
+
+.link-header:hover {
+    width: 70px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #DAFFDE;
+    text-decoration: none;
+    color:#3EA48A;
+    text-align: center;
+    
+}
+
+
+
 

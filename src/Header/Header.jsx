@@ -7,9 +7,9 @@ const Header = () => {
         <header className="header" >
             <h1>Вкусняш</h1>
             <ul className='ul-header'>
-                <li className='li-header'><a href='/'>Главная</a></li>
-                <li className='li-header'><a href='/basket'>Корзина</a></li>
-                <li className='li-header'><a href='/personalarea'>Личный кабинет</a></li>
+                <li className='li-header'><a className='link-header' href='/'>Главная</a></li>
+                <li className='li-header'><a className='link-header' href='/basket'>Корзина</a></li>
+                <li className='li-header'><a className='link-header' href='/personalarea'>вход</a></li>
             </ul>
         </header>
     )
