@@ -1,5 +1,5 @@
 import React from "react";
-import './HeadComp.css';
+import './PersonalArea.css';
 
 const PersonalArea = () => {
     return(

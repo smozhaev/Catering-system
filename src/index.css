@@ -15,11 +15,19 @@ body {
   align-self: flex-start;
   margin-left: 20px;
 }
-
+h1 {
+  color: #DAFFDE;
+  padding: 10px;
+}
+h2 {
+  color: #3EA48A ;
+}
 li {
   list-style-type: none;   
 }
-
+a {
+  text-decoration: none;
+}
 ul {
   display: flex;
   flex-direction: row;
@@ -28,4 +36,11 @@ ul {
 
 p {
   margin: 0px;
+}
+.footer-down {
+  height: 30px; 
+  background: #f7f7f7;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }

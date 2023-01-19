@@ -1,7 +1,7 @@
 import React from 'react';
-import './Drinks.css'
+import './Categories.css'
 
-const Drinks = () => {
+const Categories = () => {
     return(
         <div className="drink-block">
             <a className='link-drink' href='/'>назад</a>
@@ -17,4 +17,4 @@ const Drinks = () => {
     )
 }
 
-export default Drinks;
+export default Categories;
