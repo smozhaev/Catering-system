@@ -8,7 +8,7 @@ const Products = ({products}) => {
     return(
         <div className='products-block'>
             <a className='link-back' href='/'>назад</a>
-            <h1 className='title-products'>Чай</h1>
+            <h1 className='title-products'>Газированные напитки</h1>
             <ul className="ul-products">
                 {products.map(product =>
                     <ProductCard product={product} key={product.id}/>  

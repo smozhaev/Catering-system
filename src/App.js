@@ -14,7 +14,7 @@ import Products from "./Main/Products/Products";
 
 function App() {
   const [posts, setPosts] = useState([
-    {id: 1, title:'Чай', counter: 3, amount: 10},
+    {id: 1, title:'Газированные напитки', counter: 3, amount: 10},
     {id: 2, title:'Суп', counter: 1, amount: 10},
     {id: 3, title:'Сок', counter: 4, amount: 10},
     {id: 4, title:'Хлеб', counter: 2, amount: 10},
@@ -26,10 +26,10 @@ function App() {
     
   ])
   const [products, setProducts] = useState([
-    {id: 1, title:'Чай черный', amount: 10},
-    {id: 2, title:'Чай зеленый', amount: 6},
-    {id: 3, title:'Чай lipton черный', amount: 9},
-    {id: 4, title:'Чай lipton черный', amount: 15},
+    {id: 1, title:'Добрый cola (330 мл)', amount: 10},
+    {id: 2, title:'Добрый лимон-лайм (330 мл)', amount: 6},
+    {id: 3, title:'Добрый апельсин (330 мл)', amount: 9},
+    {id: 4, title:'Энергетический напиток Adrenaline Rush (449 мл)', amount: 15},
     
   ])   
   return (

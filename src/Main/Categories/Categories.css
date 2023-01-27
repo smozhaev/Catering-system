@@ -74,3 +74,80 @@
     box-shadow: inset 0 2px 2px #86D4C7, inset 1px 0 3px #9AE1CC, inset -1px 0 3px #6FC5C2, inset 0 -2px 2px #58B6BD, 0 0 3px rgba(0, 0, 0, 0.24); position: relative; text-shadow: 0 1px #58B6BD; outline: none;
     padding: 1px 0 0 1px;
 }
+
+.a-drinkkss {
+    color: #F0FFF2;
+    margin-top: 80px;
+    font-weight: 700;
+    font-size: 20px;
+    display: inline-block;
+    width: 150px;
+    height: 45px;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+    background: radial-gradient(169.48% 119.25% at 44.61% 109.92%, #9AE1CC 11.35%, #86D4C7 37.8%, #6FC5C2 69.14%, #58B6BD 100%);
+    border-radius: 28px;
+    font: bold 17px/20px Arial;
+    padding-top: 4px;
+    box-shadow: inset 0 2px 2px #86D4C7, inset 1px 0 3px #9AE1CC, inset -1px 0 3px #6FC5C2, inset 0 -2px 2px #58B6BD, 0 0 3px rgba(0, 0, 0, 0.24); position: relative; text-shadow: 0 1px #58B6BD; outline: none;
+}
+
+.a-drinkkss:hover {
+    background: radial-gradient(169.48% 119.25% at 44.61% 109.92%, #9AE1CC 11.35%, #86D4C7 37.8%, #6FC5C2 69.14%, #58B6BD 100%);
+    box-shadow: inset 0 2px 2px #86D4C7, inset 1px 0 3px #9AE1CC, inset -1px 0 3px #6FC5C2, inset 0 -2px 2px #58B6BD, 0 0 3px rgba(0, 0, 0, 0.24); position: relative; text-shadow: 0 1px #58B6BD; outline: none;
+}
+
+.a-drinkkss:active {
+    background: radial-gradient(169.48% 119.25% at 44.61% 109.92%, #9AE1CC 11.35%, #86D4C7 37.8%, #6FC5C2 69.14%, #58B6BD 100%);
+    box-shadow: inset 0 2px 2px #86D4C7, inset 1px 0 3px #9AE1CC, inset -1px 0 3px #6FC5C2, inset 0 -2px 2px #58B6BD, 0 0 3px rgba(0, 0, 0, 0.24); position: relative; text-shadow: 0 1px #58B6BD; outline: none;
+    padding: 1px 0 0 1px;
+}
+
+.picture11 {
+    background: url(/../Catering-system/src/Main/gazdrinks.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 182px;
+    height: 97px;
+    border-radius: 13px;
+    border:solid #000000 0px;
+    background-blend-mode: darken;
+}
+
+.picture12 {
+    background: url(/../Catering-system/src/Main/juice.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 182px;
+    height: 97px;
+    border-radius: 13px;
+    border:solid #000000 0px;
+    background-blend-mode: darken;
+}
+
+.picture13 {
+    background: url(/../Catering-system/src/Main/coffee.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 182px;
+    height: 97px;
+    border-radius: 13px;
+    border:solid #000000 0px;
+    background-blend-mode: darken;
+}
+
+.picture14 {
+    background: url(/../Catering-system/src/Main/tea.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 182px;
+    height: 97px;
+    border-radius: 13px;
+    border:solid #000000 0px;
+    background-blend-mode: darken;
+}
