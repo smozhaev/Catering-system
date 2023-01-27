@@ -39,7 +39,7 @@
     background-color: #F5F5F5 ;
 }
 .picture1 {
-    background: url(../Main/grinks1.jpg);
+    background: url(../Main/grinks1.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -52,7 +52,7 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .picture2 {
-    background: url(../Main/spices.jpg);
+    background: url(../Main/spices.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -65,7 +65,7 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .picture3 {
-    background: url(../Main/sandwishes.jpg);
+    background: url(../Main/sandwishes.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -75,7 +75,7 @@
     border:solid #000000 0px;
 }
 .picture4 {
-    background: url(../Main/pastries.jpg);
+    background: url(../Main/pastries.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -88,7 +88,7 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .picture5 {
-    background: url(../Main/snacks.jpg);
+    background: url(../Main/snacks.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
