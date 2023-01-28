@@ -8,6 +8,7 @@ const ProductCard = (props) => {
           <h2 className='product-card-h2'>{props.product.title}</h2>
           <p className='product-card-p'>наличие: {props.product.amount}</p>
           <AddButton/>
+          <p className='product-card-p'>{props.product.price}р</p>
         </li>
     )
 }
