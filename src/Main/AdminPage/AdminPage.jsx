@@ -42,12 +42,16 @@ const AdminPage = () => {
                 <PostForm create={createAddPost}/>
             </div>
             <h2>Список товаров</h2>
-            <div className='title-block'>
-                <p>Товар:</p>
-                <p>Количество:</p>
-                <p>Цена:</p>
-            </div>
-            <AdminPosts remove={removePost} eats={eats}/>
+            <table>
+                <tr>
+                    <th>Товар:</th>
+                    <th>Количество:</th>
+                    <th>Цена:</th>
+                    <th>&nbsp;</th>
+                </tr>
+                <AdminPosts remove={removePost} eats={eats}/>
+            </table>
+            
         </div>
     )
 }

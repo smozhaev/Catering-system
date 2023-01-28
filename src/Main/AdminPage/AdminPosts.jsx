@@ -4,11 +4,11 @@ import AdminPost from './AdminPost';
 
 const AdminPosts = ({eats, remove}) => {
     return(
-        <ul className="admin-posts-ul">
-            {eats.map(eat => 
-                <AdminPost remove={remove} eat={eat} key={eat.id}/>
-            )}
-        </ul>
+        
+        eats.map(eat => 
+            <AdminPost remove={remove} eat={eat} key={eat.id}/>
+        )
+        
     )
 }
 
