@@ -5,10 +5,14 @@ import AddButton from './../../../ComoponentsUi/Buttons/AddButton';
 const ProductCard = (props) => {
     return(
         <li className="li-products">
-          <h2 className='product-card-h2'>{props.product.title}</h2>
-          <p className='product-card-p'>наличие: {props.product.amount}</p>
+          <div className='img-p'></div>
+          <div className='product-text-block'>
+            <h5 className='h5'>{props.product.title}</h5>
+            <p className='product-p'>наличие: {props.product.amount}</p>
+          </div>
+          
           <AddButton/>
-          <p className='product-card-p'>{props.product.price}р</p>
+          <p className='price'>{props.product.price}₽</p>
         </li>
     )
 }

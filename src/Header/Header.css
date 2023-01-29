@@ -5,6 +5,19 @@
     background: radial-gradient(169.48% 119.25% at 44.61% 109.92%, #9AE1CC 11.35%, #86D4C7 37.8%, #6FC5C2 69.14%, #58B6BD 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
 }
 
+.header {
+    display: flex;
+    justify-content: space-between;
+    border:solid #499380 0px;
+    background:#C0E5D1;
+}
+
+.rich-logo {
+    display: flex;
+    align-self: center;
+    height: 100px;
+    
+}
 
 .ul-header {
     display: flex;

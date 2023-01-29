@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import './App.css';
+import './index.css';
 import Header from './Header/Header';
 import Main from './Main/Main';
 import Footer from './Footer/footer';
@@ -24,23 +24,18 @@ function App() {
     {id: 7, title:'Сокк', counter: 4, amount: 10, price: 100} 
   ])
   
-  const [products, setProducts] = useState([
-    {id: 1, title:'Добрый cola (330 мл)', amount: 10, price: 100},
-    {id: 2, title:'Добрый лимон-лайм (330 мл)', amount: 6, price: 100},
-    {id: 3, title:'Добрый апельсин (330 мл)', amount: 9, price: 100},
-    {id: 4, title:'Энергетический напиток Adrenaline Rush (449 мл)', amount: 15, price: 100},    
-  ])  
+ 
   
   return (
     <BrowserRouter>  
       <div className="container">
         <Header />
         <Routes>
-          <Route path='/' element={<Main/>} />
+          {/* <Route path='/' element={<Main/>} /> */}
           <Route path='/basket' element={<Basket posts={posts}/>}/>
-          <Route path='/personalarea' element={<AdminPage/>}/>
-          <Route path='/drinks' element={<Categories/>} />
-          <Route path='/drinks/tea' element={<Products products={products}/>} />
+          {/* <Route path='/personalarea' element={<AdminPage/>}/> */}
+          {/* <Route path='/drinks' element={<Categories/>} /> */}
+          <Route path='/' element={<Products/>} />
         </Routes>
         <Footer />
       </div>
