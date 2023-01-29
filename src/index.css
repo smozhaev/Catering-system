@@ -42,6 +42,6 @@ p {
   height: 30px; 
   background: #f7f7f7;
  
-  bottom: 0;
+  align-self: flex-end;
   width: 100%;
 }
