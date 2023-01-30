@@ -6,38 +6,51 @@ import Footer from './Footer/footer';
 import React from "react";
 import Basket from './Main/Basket/Basket';
 import PersonalArea from './Main/PersonalArea/PersonalArea';
-import { useState } from "react";
+import { useState, useEffect  } from "react";
 import Categories from './Main/Categories/Categories';
 import Products from "./Main/Products/Products";
 import AdminPage from './Main/AdminPage/AdminPage';
+import Data from './State';
+import Order from './Main/Order/Order';
 
 
 
 function App() {
-  const [posts, setPosts] = useState([
-    {id: 1, title:'Газированные напитки', counter: 3, amount: 10},
-    {id: 2, title:'Суп', counter: 1, amount: 10, price: 100},
-    {id: 3, title:'Сок', counter: 4, amount: 10, price: 100},
-    {id: 4, title:'Хлеб', counter: 2, amount: 10, price: 100},
-    {id: 5, title:'Чайй', counter: 3, amount: 10, price: 100},
-    {id: 6, title:'Супп', counter: 1, amount: 10, price: 100},
-    {id: 7, title:'Сокк', counter: 4, amount: 10, price: 100} 
-  ])
   
- 
+  const [basketProducts, setBasketProducts]  = useState(localStorage.getItem("basketProducts") !== null ? JSON.parse(localStorage.getItem("basketProducts")) : [])
+  const handleAddProductToBasket = productID => {
+    console.log(productID)
+    setBasketProducts(b =>[...b, productID]);
+  };
+
+  useEffect(() => {
+    localStorage.setItem('basketProducts', JSON.stringify(basketProducts));
+  }, [basketProducts]);
+
+  const handleRemoveFromCart = productID => {
+    const newBasketProducts = basketProducts.filter(id => id !== productID);
+    setBasketProducts(newBasketProducts);
+  };
+
+  
+
+
   
   return (
-    <BrowserRouter>  
-      <div className="container">
-        <Header />
-        <Routes>
-          {/* <Route path='/' element={<Main/>} /> */}
-          <Route path='/basket' element={<Basket posts={posts}/>}/>
-          {/* <Route path='/personalarea' element={<AdminPage/>}/> */}
-          {/* <Route path='/drinks' element={<Categories/>} /> */}
-          <Route path='/' element={<Products/>} />
-        </Routes>
-        <Footer />
+    <BrowserRouter>
+      <div className="wrapper">
+        <div className="content">
+          <Header />
+          <Routes>
+            {/* <Route path='/' element={<Main/>} /> */}
+            <Route path='/basket' element={<Basket   basketProducts={basketProducts} handleRemoveFromCart={handleRemoveFromCart}/>}/>
+            {/* <Route path='/personalarea' element={<AdminPage/>}/> */}
+            {/* <Route path='/drinks' element={<Categories/>} /> */}
+            <Route path='/' element={<Products handleAddProductToBasket={handleAddProductToBasket} />} />
+            <Route path='/order' element={<Order />} />
+          </Routes>
+        </div>  
+      
       </div>
     </BrowserRouter>
   );

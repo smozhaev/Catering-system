@@ -2,19 +2,15 @@ import React from "react";
 import './BasketComp.css';
 import { useState } from "react";
 
-const BasketButton = (props) => {
-    let countsProps = props.basket.counter
-    const [counts, setCounts] = useState(countsProps);
-
-    let Plus = () => setCounts(counts + 1);
-    let Minus = () => setCounts(counts - 1);
+const BasketButton = ({handleAddProductToBasket,fMinus, fPlus, ...props}) => {
+    
 
     return(
         <div className="basket-button">
             <div className="counter-container">
-              <button onClick={Minus} className='plus-button'>-</button>
-              <div className='counter'>{counts}</div>
-              <button onClick={Plus} className='plus-button'>+</button> 
+              {/* <button onClick={handleAddProductToBasket(props.id)} className='plus-button'>-</button>
+              <div className='counter'>{}</div>
+              <button onClick={fPlus(props.id)} className='plus-button'>+</button>  */}
             </div>
         </div>
     )

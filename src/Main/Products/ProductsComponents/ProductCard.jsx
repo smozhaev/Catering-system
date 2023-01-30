@@ -2,7 +2,7 @@ import React from 'react';
 import './../Products.css';
 import AddButton from './../../../ComoponentsUi/Buttons/AddButton';
 
-const ProductCard = (props) => {
+const ProductCard = ({handleAddProductToBasket, ...props}) => {
     return(
         <li className="li-products">
           <div className='img-p'></div>
@@ -11,7 +11,7 @@ const ProductCard = (props) => {
             <p className='product-p'>наличие: {props.product.amount}</p>
           </div>
           
-          <AddButton/>
+          <AddButton handleAddProductToBasket={handleAddProductToBasket}  productID={props.product}/>
           <p className='price'>{props.product.price}₽</p>
         </li>
     )

@@ -2,7 +2,8 @@ import React from "react";
 import { useState } from "react";
 import './AddButton.css';
 
-const AddButton = () => {
+
+const AddButton = ({handleAddProductToBasket, ...props}) => {
     
     const [counts, setCounts] = useState(0);
 
@@ -10,7 +11,11 @@ const AddButton = () => {
     let Minus = () => setCounts(counts - 1);
 
     return(
-        <button className='add-button'>Купить</button>
+        <button className='add-button'
+            onClick={() => handleAddProductToBasket(props.productID.id)}
+        >
+            Купить
+        </button>
     )
 }
 

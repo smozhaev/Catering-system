@@ -3,21 +3,29 @@ import './BasketComp.css';
 import BasketButton from './BasketButton';
 import AmountButton from './AmountButton';
 
-const BasketPosts = (props) => {
+const BasketPosts = ({handleRemoveFromCart, fMinus, fPlus, ...props}) => {
     // console.log(props)
     return(
-        <div className="post-block">
-            <div className="product-value">
-                {props.basket.title}
+        
+        <li className="li-products">
+            <div className='img-p'></div>
+            <div className='product-text-block'>
+                <h5 className='h5'>{props.title}</h5>
+                <p className='product-p'>наличие: {props.amount}</p>
             </div>
-            <div className="amount-content">
-                <AmountButton basket={props.basket}/>
-            </div>
-            <div className="post-content">
-                <BasketButton basket={props.basket}/>
-                <button className="delete-button">Удалить</button>
-            </div>
-        </div>
+            
+            <p className='price'>{props.price}₽</p>
+            <button
+                onClick={() => handleRemoveFromCart(props.id)} 
+                className="delete-button"
+            >
+                Удалить
+            </button>
+        </li>
+            
+
+        
+        
     )
 }
 

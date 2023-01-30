@@ -26,8 +26,12 @@
 }
 
 .title-products {
+    width: 200px;
     color: #3EA48A;
     margin: auto;
+    margin: 40px 0px 0px 30px;
+    
+    align-self: flex-start;
 }
 
 .ul-products {
@@ -106,3 +110,10 @@
     color: #C0E5D1  ;
     align-self: center;
 }
+
+.my-input {
+    height: 30px;
+    margin: 20px 20px 20px 20px;
+    outline-color: #3EA48A;
+}
+

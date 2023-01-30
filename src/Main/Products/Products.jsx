@@ -2,15 +2,17 @@ import React from 'react';
 import './Products.css';
 import ProductCard from './ProductsComponents/ProductCard';
 import MySelect from './MySelect';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Categories from './../Categories/Categories';
 import MyInput from './MyInput';
 import Data from '../../State';
 
 
-const Products = () => {
+const Products = ({handleAddProductToBasket}) => {
 
-    const [products, setProducts] = useState(Data) 
+    const [products, setProducts] = useState(Data)
+    
+    
 
     const [categories, setСategories] = useState([
         {key: 'all', name:'Все'},
@@ -21,7 +23,13 @@ const Products = () => {
         {key: 'sweets', name:'Сладости и снеки'},
     ])
     
-    const [selectedCategory, setSelectedCategory] = useState('all')
+    const [selectedCategory, setSelectedCategory] = useState(
+        localStorage.getItem("selectedCategory") !== null ? JSON.parse(localStorage.getItem("selectedCategory")) : ['all']
+    )
+    useEffect(() => {
+        localStorage.setItem('selectedCategory', JSON.stringify(selectedCategory));
+    }, [selectedCategory]);
+
     const [searchQuery, setSearchQuery] = useState('')
 
 
@@ -35,11 +43,11 @@ const Products = () => {
 
     return(
 
-        <div className='products-block'>
-            <h1 className='title-products'>Выберите продукты</h1>
+        <div className='products-block content'>
+            <h1 className='title-products'>Выберите перекус</h1>
             <div>
                 <div>
-                    <MyInput 
+                    <MyInput className='my-input'
                         value={searchQuery}
                         onChange={e => setSearchQuery(e.target.value)}
                     />
@@ -54,7 +62,7 @@ const Products = () => {
                     .filter(product => product.category == selectedCategory || selectedCategory == 'all')
                     .filter(product => product.title.toLowerCase().includes(searchQuery.toLowerCase()) == true)
                     .map(product =>
-                        <ProductCard product={product} key={product.id}/>  
+                        <ProductCard handleAddProductToBasket={handleAddProductToBasket} product={product} key={product.id}/>  
                     )
                 }
             </ul>
