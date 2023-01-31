@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 const Data = [
     {id: 1, title:'Добрый cola', amount: 10, price: 100, category: 'drinks', counter: 1},
     {id: 2, title:'Добрый лимон-лайм', amount: 6, price: 100, category: 'drinks', counter: 1},

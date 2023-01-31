@@ -2,6 +2,7 @@ import React from "react";
 import './BasketComp.css';
 import BasketButton from './BasketButton';
 import AmountButton from './AmountButton';
+import Data from './../../State';
 
 const BasketPosts = ({handleRemoveFromCart, fMinus, fPlus, ...props}) => {
     // console.log(props)
@@ -11,7 +12,8 @@ const BasketPosts = ({handleRemoveFromCart, fMinus, fPlus, ...props}) => {
             <div className='img-p'></div>
             <div className='product-text-block'>
                 <h5 className='h5'>{props.title}</h5>
-                <p className='product-p'>наличие: {props.amount}</p>
+                <p className='product-p'>{Data[props.id].counter}x</p>
+                {/* <BasketButton/> */}
             </div>
             
             <p className='price'>{props.price}₽</p>

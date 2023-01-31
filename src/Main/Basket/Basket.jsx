@@ -5,7 +5,7 @@ import Data from './../../State';
 import { Link } from 'react-router-dom';
 
 
-const Basket = ({basketProducts, handleRemoveFromCart, fMinus, fPlus}) => {
+const Basket = ({basketProducts, basketCounters, handleRemoveFromCart, fMinus, fPlus}) => {
     return(
         <div className="Basket-block">
             <h1 className='title-products'>Корзина</h1>
@@ -16,7 +16,7 @@ const Basket = ({basketProducts, handleRemoveFromCart, fMinus, fPlus}) => {
                         return product.id === productID;
                     });
                     const { id, title, amount, price, counter } = Data[index];
-    
+                    console.log(Data[productID].counter,'-2соunter', productID,'-id');
                     return (
                         <BasketPosts
                             handleRemoveFromCart={handleRemoveFromCart}

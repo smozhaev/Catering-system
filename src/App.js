@@ -18,18 +18,31 @@ import Order from './Main/Order/Order';
 function App() {
   
   const [basketProducts, setBasketProducts]  = useState(localStorage.getItem("basketProducts") !== null ? JSON.parse(localStorage.getItem("basketProducts")) : [])
+  // const [basketCounters, setBasketCounters]  = useState(localStorage.getItem("basketCounters") !== null ? JSON.parse(localStorage.getItem("basketCounters")) : [])
   const handleAddProductToBasket = productID => {
-    console.log(productID)
-    setBasketProducts(b =>[...b, productID]);
+    console.log(productID,"productID")
+    
+    if (basketProducts.includes(productID) === true) { 
+      Data[productID].counter += 1;
+      console.log(Data[productID].counter,'counter')
+      console.log('повтороное добавление товара');
+     } else {
+      setBasketProducts(b =>[...b, productID]);
+      
+    } 
+    console.log(basketProducts,'basketProducts'); 
   };
 
   useEffect(() => {
     localStorage.setItem('basketProducts', JSON.stringify(basketProducts));
   }, [basketProducts]);
 
+
+
   const handleRemoveFromCart = productID => {
     const newBasketProducts = basketProducts.filter(id => id !== productID);
     setBasketProducts(newBasketProducts);
+    
   };
 
   
@@ -43,7 +56,7 @@ function App() {
           <Header />
           <Routes>
             {/* <Route path='/' element={<Main/>} /> */}
-            <Route path='/basket' element={<Basket   basketProducts={basketProducts} handleRemoveFromCart={handleRemoveFromCart}/>}/>
+            <Route path='/basket' element={<Basket    basketProducts={basketProducts} handleRemoveFromCart={handleRemoveFromCart}/>}/>
             {/* <Route path='/personalarea' element={<AdminPage/>}/> */}
             {/* <Route path='/drinks' element={<Categories/>} /> */}
             <Route path='/' element={<Products handleAddProductToBasket={handleAddProductToBasket} />} />
