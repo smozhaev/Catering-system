@@ -1,14 +1,14 @@
 .plus-button {
+    font-size: 20px;
     align-self: center;
     width: 25px;
     color: white;
     background-color:#C0E5D1;
     box-sizing: border-box;
     text-align: center;
-    
+    vertical-align: middle;
+    font-weight: bolder;
     border-radius: 10px;
-    
-    
     border: none;
 }
 
@@ -20,19 +20,42 @@
    align-content: center; 
    width: 70px;
    height: 25px;
+   margin: 8px 0px 0px 30px;
 }
 
 .add-button {
     /* margin-left: 20px; */
-    color: #F0FFF2;
-    display: inline-block;
-    width: 55px;
+    display: flex;
     box-sizing: border-box;
-    text-align: center;
-    font-weight: 500;
+    color: #F0FFF2;
+    height: 30px;
+    width: 65px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
     border-radius: 5px;
-    color: #3EA48A;;
+    color: #3EA48A;
     background-color:#C0E5D1;
+    
+    border: none;
+}
+
+.add-button:active {
+    /* margin-left: 20px; */
+    display: flex;
+    box-sizing: border-box;
+    color: #F0FFF2;
+    height: 28px;
+    width: 63px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #C0E5D1;
+    background-color:#3EA48A;
+    transition: 100ms;
     
     border: none;
 }
@@ -42,5 +65,6 @@
 .counter {
    align-self: center;
    height: 15px;
+   color: #969b9ad9;
 
 }

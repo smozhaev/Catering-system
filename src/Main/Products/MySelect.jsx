@@ -10,7 +10,8 @@ const MySelect = ({categories, chooseCategory}) => {
                     <button 
                         className="category"
                         key={category.key} 
-                        onClick={() => chooseCategory(category.key) }><p className="p-category">{category.name}</p>
+                        onClick={() => chooseCategory(category.key) }>
+                        {category.name}
                     </button>
                 )
             }

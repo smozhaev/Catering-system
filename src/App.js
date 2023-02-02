@@ -20,17 +20,17 @@ function App() {
   const [basketProducts, setBasketProducts]  = useState(localStorage.getItem("basketProducts") !== null ? JSON.parse(localStorage.getItem("basketProducts")) : [])
   // const [basketCounters, setBasketCounters]  = useState(localStorage.getItem("basketCounters") !== null ? JSON.parse(localStorage.getItem("basketCounters")) : [])
   const handleAddProductToBasket = productID => {
-    console.log(productID,"productID")
+    // console.log(productID,"productID")
     
     if (basketProducts.includes(productID) === true) { 
-      Data[productID].counter += 1;
-      console.log(Data[productID].counter,'counter')
-      console.log('повтороное добавление товара');
+      
+      // console.log(Data[productID].counter,'counter')
+      // console.log('повтороное добавление товара');
      } else {
       setBasketProducts(b =>[...b, productID]);
       
     } 
-    console.log(basketProducts,'basketProducts'); 
+    // console.log(basketProducts,'basketProducts'); 
   };
 
   useEffect(() => {

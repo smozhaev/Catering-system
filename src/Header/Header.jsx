@@ -8,8 +8,8 @@ const Header = () => {
         <header className="header " >
             <img src={mainLogo} className='rich-logo'/>
             <ul className='ul-header'>
-                <li className='li-header'><Link to='/' className="mainn-mainn soft">Главная</Link></li>
-                <li className='li-header'><Link to='/basket' className="bascet--mainn soft">Корзина</Link></li>
+                <li className='li-box'><Link to='/' className="li-header">Главная</Link></li>
+                <li className='li-box'><Link to='/basket' className="li-header">Корзина</Link></li>
                 {/* <li className='li-header'><a href='/personalarea' class="personal-account soft">Вход</a></li> */}
             </ul>
         </header>

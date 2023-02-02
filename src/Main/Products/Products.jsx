@@ -57,15 +57,25 @@ const Products = ({handleAddProductToBasket}) => {
                 </div>
 
             </div>
-            <ul className="ul-products">
-                {products
-                    .filter(product => product.category == selectedCategory || selectedCategory == 'all')
-                    .filter(product => product.title.toLowerCase().includes(searchQuery.toLowerCase()) == true)
-                    .map(product =>
-                        <ProductCard handleAddProductToBasket={handleAddProductToBasket} product={product} key={product.id}/>  
-                    )
-                }
-            </ul>
+            {products
+                .filter(product => product.category == selectedCategory || selectedCategory == 'all')
+                .filter(product => product.title.toLowerCase().includes(searchQuery.toLowerCase()) == true)
+                .length !== 0
+                ? <ul className="ul-products">
+                    {products
+                        .filter(product => product.category == selectedCategory || selectedCategory == 'all')
+                        .filter(product => product.title.toLowerCase().includes(searchQuery.toLowerCase()) == true)
+                        .map(product =>
+                            <ProductCard handleAddProductToBasket={handleAddProductToBasket} product={product} key={product.id}/>  
+                        )
+                    }
+                  </ul>
+                : <div className="posts-p-block">
+                    <h4 className="basket-title">Товар не найден</h4>
+                    <p className="basket-title-p">Попробуйте изменить поисковой запрос</p>
+                  </div>       
+            }
+
         </div>
     )
 }

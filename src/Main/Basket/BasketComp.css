@@ -9,7 +9,14 @@
     height: auto;
        
 }
-
+.posts-block {
+    min-height: 500px;
+    min-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .post-block {
     display: flex;
     align-items: center;
@@ -37,8 +44,21 @@
 
 .delete-button {
     margin-left: 15px;
+    color: #3EA48A;
+    border: 0ch;
+    background-color: white;
+    font-weight: bolder;
 }
 
 .product-value {
     margin-left: 15px;
+}
+
+.basket-title {
+    text-align: center;
+    align-self: center;
+}
+
+.basket-title-p {
+    margin-top: 20px;
 }
